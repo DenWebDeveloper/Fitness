@@ -1,0 +1,52 @@
+.modal
+    .modal-wrapper
+        button.modal-close
+            i.fas.fa-window-close
+        form.modal-form
+            input.input(type="text", name="name", placeholder="имя")
+            input.input(type="number",  name="age", placeholder="возраст")
+            input.input(type="number", name="weight", placeholder="вес")
+            input.input(type="text", name="sex", placeholder="пол")
+            select.input(name="sports")
+                option( selected, value='football') Фотбол
+                option(value='hockey') Хокей
+                option(value='basketball') Баскетбол
+            .programs
+                label.program-1
+                    input.checkbox(type='checkbox', name='checkbox-test')
+                    span.checkbox-custom
+                    span.label
+                        ul
+                            li Название: Тренировка1
+                            li Цена: 2000грн
+                            li График: Cб 20:00
+                            li Место: Центральный стадион
+                label.program-2
+                    input.checkbox(type='checkbox', name='checkbox-test')
+                    span.checkbox-custom
+                    span.label
+                        ul
+                            li Название: Тренировка2
+                            li Цена: 3333грн
+                            li График: Cб 12:00
+                            li Место: Центральный стадион
+                label.program-3
+                    input.checkbox(type='checkbox', name='checkbox-test')
+                    span.checkbox-custom
+                    span.label
+                        ul
+                            li Название: Тренировка3
+                            li Цена: 2200грн
+                            li График: Cб 15:00
+                            li Место: Центральный стадион
+                label.program-4
+                    input.checkbox(type='checkbox', name='checkbox-test')
+                    span.checkbox-custom
+                    span.label
+                        ul
+                            li Название: Тренировка4
+                            li Цена: 1000грн
+                            li График: Cб 10:00
+                            li Место: Центральный стадион
+                button.sign-up Записаться
+

@@ -1,0 +1,29 @@
+.banner {
+  padding-top: 146px;
+  padding-bottom: 152px;
+  text-align: center;
+  background: #eb5e36 url(../img/banner-bg.jpg) center center/cover no-repeat;
+}
+
+.banner__title {
+  font-size: 39.6px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 39px;
+}
+
+.banner__button {
+  padding: 16px 65px;
+  border-radius: 25px;
+  color: #fff;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+    color: #fe5621;
+    background-color: #ffffff;
+  }
+}

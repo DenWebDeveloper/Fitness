@@ -1,0 +1,51 @@
+header.header
+    .header__wrapper.container
+        .mini-header
+            a.mini-header__link.mini-header__link--phone(href="tel:+6494461709")
+                img.mini-header__link-icon(src="assets/img/phone.svg", alt="Phone icon")
+                |+38 050 32 45 555
+            a.mini-header__link.mini-header__link--email(href="mailto:test@test.test")
+                img.mini-header__link-icon(src="assets/img/email.svg", alt="Email icon")
+                |mail@fitness.org
+            a.mini-header__link.mini-header__link--adress(href="#")
+                img.mini-header__link-icon(src="assets/img/marker.svg", alt="Marker icon")
+                | г. Киев, ул.Центр, дом. 1
+            a.mini-header__link.mini-header__link--schedule(href="#")
+                img.mini-header__link-icon(src="assets/img/clock.svg", alt="Clock icon")
+                | Пн-Сб 9:00-22:00, Вс 10:00-22:00
+            .socials
+                a.socials__link(href="#")
+                     i.fab.fa-facebook-f
+                a.socials__link(href="#")
+                    i.fab.fa-vk
+                a.socials__link.socials__link--youtube(href="#")
+                a.socials__link(href="#")
+                    i.fab.fa-instagram
+.header-nav
+    .header-nav__wrapper.container
+        a.logo(href="#")
+            span
+                span.logo__orange Pro
+                | Fitness
+            span.logo__small Фитнес центр
+        button.header-nav__toggle
+            i.fas.fa-bars
+        nav.nav
+            ul.nav__items
+                li.nav__item
+                    a.nav__link(href="#") О нас
+                li.nav__item
+                    a.nav__link(href="#") Услуги
+                li.nav__item
+                    a.nav__link(href="#") Расписание
+                li.nav__item
+                    a.nav__link(href="#") Цены
+                li.nav__item
+                    a.nav__link(href="#") Команда
+                li.nav__item
+                    a.nav__link(href="#") Контакты
+.jumbotron
+    .jumbotron__wrapper.container
+        h1.jumbotron__title Фитнес центр
+        p.jumbotron__paragraph Начните свой путь к здоровому образу жизни с помощью наших персонализированных программ
+        button.jumbotron__button Записаться

@@ -1,0 +1,114 @@
+.services__wrapper {
+  padding-bottom: 80px;
+  padding-top: 4.7%;
+}
+
+.services__items {
+  margin-top: 46px;
+  display: flex;
+  justify-content: center;
+
+  @include media(1250) {
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+}
+
+.services__item {
+  padding: 0 45px;
+  text-align: center;
+  background: #ccc center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 293px;
+  min-height: 478px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(#fe5621, 0);
+  }
+  &:hover {
+    transform: scale(1.034);
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+    &:before {
+      background-color: rgba(#fe5621, 0.85);
+    }
+    .services__price,
+    .services__paragraph,
+    .services__link-more {
+      z-index: 2;
+      display: block;
+    }
+
+    .services__title {
+      margin-top: 115px;
+    }
+
+    .services__paragraph {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0.35px;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.services__title {
+  margin-top: 210px;
+  font-size: 24px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.services__price,
+.services__paragraph,
+.services__link-more {
+  display: none;
+}
+
+.services__link-more {
+  padding: 16px 45px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  margin-top: 18px;
+  text-decoration: none;
+  color: #fe5621;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.38px;
+  border: 2px solid rgba(0,0,0,0);
+
+  &:hover {
+    background-color: transparent;
+    color:#fff;
+    border: 2px solid #ffffff;
+  }
+}
+
+.services__item--personal-coach {
+  background-image: url(../img/personal-coach.jpg);
+}
+
+.services__item--gym {
+  background-image: url(../img/gym.jpg);
+}
+
+.services__item--group-lessons {
+  background-image: url(../img/group-lessons.jpg);
+}
+
+.services__item--boxing {
+  background-image: url(../img/boxing.jpg);
+}
